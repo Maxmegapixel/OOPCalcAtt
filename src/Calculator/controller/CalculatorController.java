@@ -26,7 +26,6 @@ public class CalculatorController {
     }
 
 
-
     public void run() {
         while (true) {
             prepare();
@@ -90,9 +89,6 @@ public class CalculatorController {
     private boolean isInvalidOperator(String operator) {
         return !validOperators.contains(operator);
     }
-
-
-
 
 
 }

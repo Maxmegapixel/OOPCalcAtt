@@ -4,7 +4,7 @@ import Calculator.model.ComplexNumber;
 import Calculator.model.calc.ComplexCalculable;
 
 public class LogableCalc implements ComplexCalculable {
-    private final ComplexCalculable calculable ;
+    private final ComplexCalculable calculable;
 
     public LogableCalc(ComplexCalculable calculable) {
         this.calculable = calculable;
