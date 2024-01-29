@@ -1,11 +1,12 @@
-package Calculator.Model.Calc;
+package Calculator.model.calc.impl;
 
-import Calculator.Model.ComplexNumber;
+import Calculator.model.calc.ComplexCalculable;
+import Calculator.model.ComplexNumber;
 
-public class ComplexCalc implements ComplexCalculatorable {
+public class ComplexCalc implements ComplexCalculable {
 
     @Override
-    public ComplexNumber add(ComplexNumber a, ComplexNumber b) {
+    public ComplexNumber sum(ComplexNumber a, ComplexNumber b) {
         return new ComplexNumber(a.getReal() + b.getReal(), a.getImaginary() + b.getImaginary());
     }
 
@@ -23,4 +24,6 @@ public class ComplexCalc implements ComplexCalculatorable {
         double imaginary = (a.getImaginary() * b.getReal() - a.getReal() * b.getImaginary()) / denominator;
         return new ComplexNumber(real, imaginary);
     }
+
+
 }
